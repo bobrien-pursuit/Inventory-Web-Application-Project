@@ -70,8 +70,7 @@ Grades don't always tell the whole story, do they? In the real world, what reall
 
 1. When a user clicks on the "Remove" button for each resource, that resource is removed from the page.
 2. The form should require at least three of the fields of the resource to be required. If the "Submit" button is clicked and those requirements are not met, an error message should be shown to the user telling them exactly what is wrong. The form fields should stay filled in and a resource should not be created.
-3. When the "Reset" button is clicked, the form should be cleared.
-4. When the form is completed correctly, the form should be cleared and a new resource should appear at the top or bottom of all previous resources.
+3. When the form is completed correctly, the form should be cleared and a new resource should appear at the top or bottom of all previous resources.
 
 ### Mastery rubric
 
