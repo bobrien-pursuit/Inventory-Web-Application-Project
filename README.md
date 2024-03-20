@@ -118,4 +118,4 @@ In this example, clicking "In Stock" or "Out of Stock" will toggle the value for
 
 
 ## Submission
-Once you completed, convert to a github pages and submit the link to your project.
+Once you completed, convert to a github pages. Place a link to your project in the README of your project and submit your repo link.
