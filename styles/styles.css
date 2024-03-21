@@ -39,8 +39,8 @@ html, body {
   padding: 0px;
   margin: 0;
 }
-.booktory__book-image {
-  width: 140px;
+.booktory #main__image, .booktory__book__image {
+  width: 120px;
 }
 
 /*# sourceMappingURL=styles.css.map */
