@@ -6,16 +6,46 @@
 html, body {
     height: 100vh;
     width: 100vw;
-    // grid-template-columns: 1fr 3fr 3fr;
-    // grid-area: "booktory main form";
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-area: "left main form";
 }
 
-booktory {
+.booktory {
 
     background-color: white;
 
     &__left-panel {
-        margin: auto auto;
-        grid-column: booktory;
+        margin: auto;
+        font-size: 96px;
+        text-orientation: mixed;
+        writing-mode: vertical-lr;
+        rotate: 180deg;
+    }
+
+    &__form-container {
+        width: 250px;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__input-boxes {
+    }
+    &__input-box{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+    #main, &__book {
+        display: flex;
+        padding: 0px;
+        margin: 0;
+
+    }
+
+    &__book-image {
+        width: 140px;
     }
 }

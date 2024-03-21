@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="styles/styles.css" >
 </head>
 <body>
-    <aside class="booktory__left-panel">Booktory</aside>
-    <main>
-        <article class="booktory__left-panel">
-            <img src="">
+    <aside class="booktory__left-panel" id="left">Booktory</aside>
+    <main id="main">
+        <article class="booktory__book">
+            <img class="booktory__book-image" src="https://images-na.ssl-images-amazon.com/images/I/71-gn6NqT3S._AC_UL381_SR381,381_.jpg">
             <h2>Title</h2>
             <h3>Author</h3>
             <button>In Stock</button>
             <h1>$9.99</h1>
-            <i>delete</i>
-            <hr>
+            <i>delete</i>            
         </article>
+        <hr>
     </main>
     <aside>
-        <form>
-            <input type="text" placeholder="Title"><br>
-            <input type="text" placeholder="Author"><br>
-            <input type="url" placeholder="Image URL"><br>
-            <input type="number" pattern='/[^$0-9\.]/g' placeholder="Price"><br>
-            <select name="Booktory" id="books-in-stock">
+        <form class="booktory__form-container">
+            <input type="text" placeholder="Title" class="booktory__input-box">
+            <input type="text" placeholder="Author" class="booktory__input-box">
+            <input type="url" placeholder="Image URL" class="booktory__input-box">
+            <input type="number" pattern='/[^$0-9\.]/g' placeholder="Price" class="booktory__input-box">
+            <select name="Booktory" id="books-in-stock" class="booktory__input-box">
                 <option value="book1">book1</option>
             </select><br>
             <button>Add Book</button>
