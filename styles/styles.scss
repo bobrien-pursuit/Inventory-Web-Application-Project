@@ -6,6 +6,16 @@
 html, body {
     height: 100vh;
     width: 100vw;
-    grid-template-columns: 1fr 3fr 3fr;
-    grid-area: "booktory main form";
+    // grid-template-columns: 1fr 3fr 3fr;
+    // grid-area: "booktory main form";
+}
+
+booktory {
+
+    background-color: white;
+
+    &__left-panel {
+        margin: auto auto;
+        grid-column: booktory;
+    }
 }
