@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booktory Project - Brendan O'Brien</title>
+    <link rel="stylesheet" href="styles/styles.css" >
 </head>
 <body>
     <aside>Booktory</aside>
@@ -19,7 +20,16 @@
         </article>
     </main>
     <aside>
-        <form 
+        <form>
+            <input type="text" placeholder="Title"><br>
+            <input type="text" placeholder="Author"><br>
+            <input type="url" placeholder="Image URL"><br>
+            <input type="number" pattern='/[^$0-9\.]/g' placeholder="Price"><br>
+            <select name="Booktory" id="books-in-stock">
+                <option value="book1">book1</option>
+            </select><br>
+            <button>Add Book</button>
+        </form>
     </aside>
 </body>
 </html>
