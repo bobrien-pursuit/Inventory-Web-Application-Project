@@ -1,5 +1,7 @@
 const addBook = document.getElementById('button-submit');
 const stocks = document.getElementById('stock');
+const deleteElement = document.getElementsByTagName('i');
+const hrTag = document.getElementsByName('hr');
 
 addBook.addEventListener('click', e => {
     e.preventDefault();
@@ -37,42 +39,53 @@ addBook.addEventListener('click', e => {
           deleteDiv.setAttribute('class', 'booktory__book__book-delete');
       
     const deleteText = document.createElement('i');
+          deleteText.setAttribute('id', 'delete-button');
           deleteText.innerText = 'delete';
       
           deleteDiv.appendChild(deleteText);
 
-          hrTag = document.createElement('hr');
+    const newHr = document.createElement('hr');
 
           article.append(articleImage);
           article.append(articleInfo);
           article.append(deleteDiv);
-          article.append(hrTag);
-         
-         
+          
+          
           document.getElementById('main').appendChild(article);
+          main.append(newHr);
+
+    const deleteButton = document.getElementById('delete-button');
+
+            deleteButton.addEventListener('click', e => {
+                   articleImage.remove();
+                   articleInfo.remove();
+                   deleteDiv.remove();
+                   newHr.remove();
+            });
 
 
 });
 
+const books = document.getElementsByClassName('booktory__book');
 
-for (let i = 0; i <= document.getElementsByTagName('i').length; i++){
-      document.getElementsByTagName('i')[i].addEventListener('click', (e) => {
+for (let i = 0; i < deleteElement.length; i++){
+       deleteElement[i].addEventListener('click', (e) => {
        e.preventDefault();
-       main.removeChild(document.getElementsByTagName('article')[i]);
+       main.removeChild(books[i]);
+       main.removeChild(hrTag[i]);
             });
       };
 
-for (let stock of stocks){
-      stock.addEventListener('click', e => {
-      e.preventDefault();
-      if (stock.innerText === 'In Stock')
-            stock.innerText = 'Out of Stock';
-      else if (stock.innerText === 'Out of Stock')
-            stock.innerText = 'In Stock';
-      else 
-            return;
+// for (let stock of stocks){
+//       stock.addEventListener('click', e => {
+//       e.preventDefault();
+//       if (stock.innerText === 'In Stock')
+//             stock.innerText = 'Out of Stock';
+//       else if (stock.innerText === 'Out of Stock')
+//             stock.innerText = 'In Stock';
+//       else
+//            return;
 
-            return;
-      });
+//       });
+// };
 
-};
