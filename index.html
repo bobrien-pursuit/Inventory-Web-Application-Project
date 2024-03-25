@@ -7,29 +7,70 @@
     <link rel="stylesheet" href="styles/styles.css" >
 </head>
 <body>
-    <aside class="booktory__left-panel" id="left">Booktory</aside>
+    </style>
+    <aside class="booktory__left-panel" id="left">
+        <p>Booktory</p>
+    </aside>
     <main id="main">
         <article class="booktory__book">
-            <img class="booktory__book__image" src="https://images-na.ssl-images-amazon.com/images/I/71-gn6NqT3S._AC_UL381_SR381,381_.jpg">
-            <h2>Title</h2>
-            <h3>Author</h3>
-            <button>In Stock</button>
-            <h1>$9.99</h1>
-            <i>delete</i>            
+            <div class="booktory__book__book-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71-gn6NqT3S._AC_UL381_SR381,381_.jpg">
+            </div>
+            <div class="booktory__book__book-info">
+                <h2>Security+</h2>
+                <h3>The Guy</h3>
+                <button>In Stock</button>
+                <h1>$Free.99</h1>
+            </div>
+            <div class="booktory__book__book-delete">
+                <i>delete</i>
+            </div>            
+        </article>
+        <hr>
+        <article class="booktory__book">
+            <div class="booktory__book__book-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61jXSsH1M8L._AC_UL381_SR381,381_.jpg">
+            </div>
+            <div class="booktory__book__book-info">
+                <h2>Python and SQL</h2>
+                <h3>John Doe</h3>
+                <button>In Stock</button>
+                <h1>$0.99</h1>
+            </div>
+            <div class="booktory__book__book-delete">
+                <i>delete</i>
+            </div>            
+        </article>
+        <hr>
+        <article class="booktory__book">
+            <div class="booktory__book__book-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/611-DhuastL._AC_UL381_SR381,381_.jpg">
+            </div>
+            <div class="booktory__book__book-info">
+                <h2>Victory in Spiritual Warfare</h2>
+                <h3>Dr. Tony Evans</h3>
+                <button>In Stock</button>
+                <h1>$17.99</h1>
+            </div>
+            <div class="booktory__book__book-delete">
+                <i>delete</i>
+            </div>            
         </article>
         <hr>
     </main>
     <aside>
         <form class="booktory__form-container">
-            <input type="text" placeholder="Title" class="booktory__input-box">
-            <input type="text" placeholder="Author" class="booktory__input-box">
-            <input type="url" placeholder="Image URL" class="booktory__input-box">
-            <input type="number" pattern='/[^$0-9\.]/g' placeholder="Price" class="booktory__input-box">
-            <select name="Booktory" id="books-in-stock" class="booktory__input-box">
-                <option value="book1">book1</option>
+            <input type="text" placeholder="Title" class="booktory__form-container__input-box" id="book-title-input">
+            <input type="text" placeholder="Author" class="booktory__form-container__input-box" id="book-author-input">
+            <input type="text" placeholder="Image URL" class="booktory__form-container__input-box" id="book-image-url">
+            <input type="text" placeholder="Price" class="booktory__form-container__input-box" id="book-price-input">
+            <select name="Booktory" id="books-in-stock" class="booktory__form-container__input-box" id="book-status-options">
+                <option value="books-in-stock">In Stock</option>
+                <option value="out-of-stock">Out of Stock</option>
             </select><br>
-            <button>Add Book</button>
+            <button type="submit" id="button-submit">Add Book</button>
         </form>
     </aside>
+<script src="script.js"></script>
 </body>
 </html>

@@ -12,12 +12,10 @@ html, body {
   grid-area: "left main form";
 }
 
-.booktory {
-  background-color: white;
-}
 .booktory__left-panel {
   margin: auto;
-  font-size: 96px;
+  font-size: 98px;
+  font-weight: 100;
   text-orientation: mixed;
   writing-mode: vertical-lr;
   rotate: 180deg;
@@ -27,21 +25,47 @@ html, body {
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  padding: 0px;
+  margin: 0px;
 }
-.booktory__input-box {
-  width: 100%;
+.booktory__form-container__input-box {
+  width: 90%;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid black;
 }
-.booktory #main, .booktory__book {
-  display: flex;
-  padding: 0px;
-  margin: 0;
+.booktory #main {
+  display: grid;
+  grid-template-columns: 500px;
 }
-.booktory #main__image, .booktory__book__image {
-  width: 120px;
+.booktory__book {
+  padding: 0px;
+  margin: 0px;
+  height: 180px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 100px 300px 100px;
+}
+.booktory__book__book-image {
+  grid-column: 1/2;
+  width: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+.booktory__book__book-image img {
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+.booktory__book__book-info {
+  grid-column: 2/3;
+  width: 300px;
+}
+.booktory__book__book-delete {
+  grid-column: 3/4;
+  margin-top: 90px;
 }
 
 /*# sourceMappingURL=styles.css.map */
