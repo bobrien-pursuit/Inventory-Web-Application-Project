@@ -51,14 +51,19 @@ addBook.addEventListener('click', e => {
           article.append(deleteDiv);
           
           
-          document.getElementById('main').appendChild(article);
-          main.append(newHr);
+      // const deleteButton = document.getElementById('delete-button');
 
-    const deleteButton = document.getElementById('delete-button');
-
-      deleteButton.addEventListener('click', e => {
-            console.log(e.childNodes());
+      // deleteButton.addEventListener('click', (e) => {
+      deleteText.addEventListener('click', (e) => {
+            // console.log(e.childNodes());
+            console.log(e.target.parentElement.parentElement);
+            e.target.parentElement.parentElement.remove();
       });
+          
+          document.getElementById('main').appendChild(article);
+          article.append(newHr);
+
+    
 
 });
 

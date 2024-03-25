@@ -53,6 +53,7 @@ html, body {
         width: 500px;
         display: grid;
         grid-template-columns: 100px 300px 100px;
+        border-top: 20px solid black;
 
         &__book-image {
             grid-column: 1/2;
