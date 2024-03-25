@@ -56,25 +56,21 @@ addBook.addEventListener('click', e => {
 
     const deleteButton = document.getElementById('delete-button');
 
-            deleteButton.addEventListener('click', e => {
-                   articleImage.remove();
-                   articleInfo.remove();
-                   deleteDiv.remove();
-                   newHr.remove();
-            });
-
+      deleteButton.addEventListener('click', e => {
+            console.log(e.childNodes());
+      });
 
 });
 
 const books = document.getElementsByClassName('booktory__book');
 
-for (let i = 0; i < deleteElement.length; i++){
-       deleteElement[i].addEventListener('click', (e) => {
-       e.preventDefault();
-       main.removeChild(books[i]);
-       main.removeChild(hrTag[i]);
-            });
-      };
+// for (let i = 0; i < deleteElement.length; i++){
+//        deleteElement[i].addEventListener('click', (e) => {
+//        e.preventDefault();
+//        main.removeChild(books[i]);
+//        main.removeChild(hrTag[i]);
+//             });
+//       };
 
 // for (let stock of stocks){
 //       stock.addEventListener('click', e => {
