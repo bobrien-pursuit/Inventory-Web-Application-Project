@@ -1,4 +1,5 @@
 const addBook = document.getElementById('button-submit');
+const stocks = document.getElementById('stock');
 
 addBook.addEventListener('click', e => {
     e.preventDefault();
@@ -49,13 +50,29 @@ addBook.addEventListener('click', e => {
          
          
           document.getElementById('main').appendChild(article);
-          
+
 
 });
 
-for (let i = 0; i <= document.getElementsByTagName('i').length; i++)
+
+for (let i = 0; i <= document.getElementsByTagName('i').length; i++){
       document.getElementsByTagName('i')[i].addEventListener('click', (e) => {
        e.preventDefault();
        main.removeChild(document.getElementsByTagName('article')[i]);
-});
+            });
+      };
 
+for (let stock of stocks){
+      stock.addEventListener('click', e => {
+      e.preventDefault();
+      if (stock.innerText === 'In Stock')
+            stock.innerText = 'Out of Stock';
+      else if (stock.innerText === 'Out of Stock')
+            stock.innerText = 'In Stock';
+      else 
+            return;
+
+            return;
+      });
+
+};
